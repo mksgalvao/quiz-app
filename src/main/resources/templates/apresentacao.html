@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Quiz da Sustentabilidade </title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h3>Seja bem Vindo ao Quiz Sustentabilidade da UNIP</h3>
+    <form action="#" th:action="@{/iniciaPessoa}" th:object="${pessoa}" method="post">
+    <table border="1">
+        <tr>
+            <td><label>Qual seu nome?</label></td>
+            <td><input type="text" th:field="*{nome}" /></td>
+        </tr>
+        <tr>
+            <td><label>Qual sua idade?</label></td>
+            <td><input type="number" th:field="*{idade}" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

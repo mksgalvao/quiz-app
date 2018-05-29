@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Quiz da Sustentabilidade </title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h3> Quiz Sustentabilidade da UNIP</h3>
+     <p th:text="${index} + ') ' +${pergunta.texto}" />
+    <form action="#" th:action="@{/resposta}" th:object="${resposta}" method="post">
+     <div th:each = "opcao: ${pergunta.opcoes}">
+     	
+	     <input type="radio" name="answer" th:value="${opcao.letra}" th:field="*{letra}"> 
+	     <label th:text="${opcao.letra} + ') ' +${opcao.texto}"></label>  
+	     <br>
+     </div><br>
+     <input type="submit" value="Responder" />
+    </form>
+</body>
+</html>
