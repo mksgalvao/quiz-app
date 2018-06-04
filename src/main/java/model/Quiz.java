@@ -5,8 +5,7 @@ import java.util.List;
 
 public class Quiz {
 
-	private double pontos;
-	private List<Pergunta> perguntas = new ArrayList<>();
+	private List<Pergunta> perguntas = new ArrayList<>(); // lista de perguntas
 	private Pessoa pessoa;
 
 	public Quiz(Pessoa pessoa) {
@@ -16,13 +15,6 @@ public class Quiz {
 	public Quiz() {
 	}
 
-	public double getPontos() {
-		return pontos;
-	}
-
-	public void setPontos(double pontos) {
-		this.pontos = pontos;
-	}
 
 	public List<Pergunta> getPerguntas() {
 		return perguntas;

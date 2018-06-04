@@ -29,7 +29,7 @@ public class Opcao {
 		this.texto = texto;
 	}
 
-	@Override
+	@Override // sobrescrita do método 
 	public String toString() {
 		return letra + ") " + texto;
 	}

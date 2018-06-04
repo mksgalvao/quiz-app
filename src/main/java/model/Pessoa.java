@@ -5,7 +5,7 @@ public class Pessoa {
 	private String nome;
 	private int idade;
 	
-	public Pessoa() {
+	public Pessoa() { // metodo construtor 
 	}
 
 	public Pessoa(String nome, int idade) {
@@ -31,7 +31,7 @@ public class Pessoa {
 	}
 
 	@Override
-	public String toString() {
+	public String toString() { // metodo to String com Sobrescrita
 		return "Pessoa [nome=" + nome + ", idade=" + idade + "]";
 	}
 }

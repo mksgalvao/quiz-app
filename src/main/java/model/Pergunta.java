@@ -8,7 +8,7 @@ public class Pergunta {
 	private String texto;
 	private char resposta;
 	private String explicacao;
-	private List<Opcao> opcoes = new ArrayList<>();
+	private List<Opcao> opcoes = new ArrayList<>(); // Lista de opçoes
 
 	public Pergunta() {
 	}
@@ -59,8 +59,9 @@ public class Pergunta {
 	public void setOpcoes(List<Opcao> opcoes) {
 		this.opcoes = opcoes;
 	}
-
-	public String validaResposta(char letra) {
+	
+	//metodo que valida as respostas
+	public String validaResposta(char letra) { 
 		String res;
 		if (letra == resposta) {
 			res = "Resposta correta!\n" + "Explicação: " + explicacao;
@@ -71,7 +72,7 @@ public class Pergunta {
 		return res + "\n";
 	}
 
-	@Override
+	@Override // sobrescrita do metodo 
 	public String toString() {
 		String result = "";
 		for (Opcao opcao : opcoes) {
