@@ -64,9 +64,9 @@ public class Pergunta {
 	public String validaResposta(char letra) { 
 		String res;
 		if (letra == resposta) {
-			res = "Resposta correta!\n" + "Explicação: " + explicacao;
+			res = "Resposta correta!\n" + "\n" + explicacao;
 		} else {
-			res = "Resposta incorreta!\n" + "Explicação: " + explicacao;
+			res = "Resposta incorreta!\n" + "\n" + explicacao;
 		}
 
 		return res + "\n";
